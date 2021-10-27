@@ -6,4 +6,4 @@ Put grades, check courses
 ## Student possibilities
 Check grades and courses, see grades statistics
 ## Admin possibilities
-Add new lecturers and students, create group journal
+Add new lecturers and students, create and update courses, create accounts

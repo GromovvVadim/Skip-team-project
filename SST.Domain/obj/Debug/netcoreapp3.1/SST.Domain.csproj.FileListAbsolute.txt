@@ -1,0 +1,10 @@
+G:\project_skipteam\Student-Success-Tracking\src\SST.Domain\bin\Debug\netcoreapp3.1\SST.Domain.deps.json
+G:\project_skipteam\Student-Success-Tracking\src\SST.Domain\bin\Debug\netcoreapp3.1\SST.Domain.dll
+G:\project_skipteam\Student-Success-Tracking\src\SST.Domain\bin\Debug\netcoreapp3.1\SST.Domain.pdb
+G:\project_skipteam\Student-Success-Tracking\src\SST.Domain\obj\Debug\netcoreapp3.1\SST.Domain.csproj.AssemblyReference.cache
+G:\project_skipteam\Student-Success-Tracking\src\SST.Domain\obj\Debug\netcoreapp3.1\SST.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\project_skipteam\Student-Success-Tracking\src\SST.Domain\obj\Debug\netcoreapp3.1\SST.Domain.AssemblyInfoInputs.cache
+G:\project_skipteam\Student-Success-Tracking\src\SST.Domain\obj\Debug\netcoreapp3.1\SST.Domain.AssemblyInfo.cs
+G:\project_skipteam\Student-Success-Tracking\src\SST.Domain\obj\Debug\netcoreapp3.1\SST.Domain.csproj.CoreCompileInputs.cache
+G:\project_skipteam\Student-Success-Tracking\src\SST.Domain\obj\Debug\netcoreapp3.1\SST.Domain.dll
+G:\project_skipteam\Student-Success-Tracking\src\SST.Domain\obj\Debug\netcoreapp3.1\SST.Domain.pdb

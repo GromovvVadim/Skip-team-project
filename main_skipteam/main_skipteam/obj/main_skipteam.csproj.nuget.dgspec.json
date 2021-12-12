@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\project_skipteam\\Нова папка\\Skip-team-project\\main_skipteam\\main_skipteam\\main_skipteam.csproj": {}
+    "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\main_skipteam.csproj": {}
   },
   "projects": {
-    "G:\\project_skipteam\\Нова папка\\Skip-team-project\\main_skipteam\\main_skipteam\\main_skipteam.csproj": {
+    "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\main_skipteam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\project_skipteam\\Нова папка\\Skip-team-project\\main_skipteam\\main_skipteam\\main_skipteam.csproj",
+        "projectUniqueName": "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\main_skipteam.csproj",
         "projectName": "main_skipteam",
-        "projectPath": "G:\\project_skipteam\\Нова папка\\Skip-team-project\\main_skipteam\\main_skipteam\\main_skipteam.csproj",
-        "packagesPath": "C:\\Users\\bobel\\.nuget\\packages\\",
-        "outputPath": "G:\\project_skipteam\\Нова папка\\Skip-team-project\\main_skipteam\\main_skipteam\\obj\\",
+        "projectPath": "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\main_skipteam.csproj",
+        "packagesPath": "C:\\Users\\Вадим\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Вадим\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +49,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.21, 3.1.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

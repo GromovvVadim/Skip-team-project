@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\project_skipteam\\Нова папка\\Skip-team-project\\SST.Domain\\SST.Domain.csproj": {}
+    "D:\\projects\\Skip-team-project\\SST.Domain\\SST.Domain.csproj": {}
   },
   "projects": {
-    "G:\\project_skipteam\\Нова папка\\Skip-team-project\\SST.Domain\\SST.Domain.csproj": {
+    "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\SST.WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\project_skipteam\\Нова папка\\Skip-team-project\\SST.Domain\\SST.Domain.csproj",
-        "projectName": "SST.Domain",
-        "projectPath": "G:\\project_skipteam\\Нова папка\\Skip-team-project\\SST.Domain\\SST.Domain.csproj",
-        "packagesPath": "C:\\Users\\bobel\\.nuget\\packages\\",
-        "outputPath": "G:\\project_skipteam\\Нова папка\\Skip-team-project\\SST.Domain\\obj\\",
+        "projectUniqueName": "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\SST.WebUI.csproj",
+        "projectName": "SST.WebUI",
+        "projectPath": "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\SST.WebUI.csproj",
+        "packagesPath": "C:\\Users\\Вадим\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Вадим\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,6 +28,67 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\projects\\Skip-team-project\\SST.Domain\\SST.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\Skip-team-project\\SST.Domain\\SST.Domain.csproj",
+        "projectName": "SST.Domain",
+        "projectPath": "D:\\projects\\Skip-team-project\\SST.Domain\\SST.Domain.csproj",
+        "packagesPath": "C:\\Users\\Вадим\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\Skip-team-project\\SST.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Вадим\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\SST.WebUI.csproj": {
+                "projectPath": "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\SST.WebUI.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

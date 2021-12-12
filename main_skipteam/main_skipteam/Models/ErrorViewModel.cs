@@ -1,6 +1,6 @@
 using System;
 
-namespace main_skipteam.Models
+namespace SST.WebUI.Models
 {
     public class ErrorViewModel
     {

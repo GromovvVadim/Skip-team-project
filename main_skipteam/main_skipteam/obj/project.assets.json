@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\bobel\\.nuget\\packages\\": {}
+    "C:\\Users\\Вадим\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\project_skipteam\\Нова папка\\Skip-team-project\\main_skipteam\\main_skipteam\\main_skipteam.csproj",
-      "projectName": "main_skipteam",
-      "projectPath": "G:\\project_skipteam\\Нова папка\\Skip-team-project\\main_skipteam\\main_skipteam\\main_skipteam.csproj",
-      "packagesPath": "C:\\Users\\bobel\\.nuget\\packages\\",
-      "outputPath": "G:\\project_skipteam\\Нова папка\\Skip-team-project\\main_skipteam\\main_skipteam\\obj\\",
+      "projectUniqueName": "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\SST.WebUI.csproj",
+      "projectName": "SST.WebUI",
+      "projectPath": "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\SST.WebUI.csproj",
+      "packagesPath": "C:\\Users\\Вадим\\.nuget\\packages\\",
+      "outputPath": "D:\\projects\\Skip-team-project\\main_skipteam\\main_skipteam\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Вадим\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

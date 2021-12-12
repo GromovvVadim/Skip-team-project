@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace main_skipteam
+namespace SST.WebUI
 {
     public class Program
     {

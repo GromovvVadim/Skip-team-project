@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SST.Persistence.Migrations
 {
-    public partial class MigrationInit : Migration
+    public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -225,6 +225,109 @@ namespace SST.Persistence.Migrations
                         principalTable: "Students",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Groups",
+                columns: new[] { "Id", "Faculty", "IsMain", "Name", "Year" },
+                values: new object[,]
+                {
+                    { 1, "Факультет прикладної математики та інформатики", true, "ПМІм-11", 0 },
+                    { 2, "Факультет прикладної математики та інформатики", true, "ПМІм-12", 0 },
+                    { 3, "Факультет прикладної математики та інформатики", true, "ПМІм-13", 0 },
+                    { 4, "Факультет журналістики", true, "ЖРН-11с", 0 },
+                    { 5, "Філософський факультет", true, "ФФП-42с", 0 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Lectors",
+                columns: new[] { "Id", "AcademicStatus", "FirstName", "LastName", "UserRef" },
+                values: new object[,]
+                {
+                    { 1, "Доцент", "Анатолій", "Музичук", null },
+                    { 2, "Асистент", "Андрій", "Глова", null },
+                    { 3, "Професор", "Юрій", "Щербина", null },
+                    { 4, "Доцент", "Віталій", "Горлач", null },
+                    { 5, "Асистент", "Любомир", "Галамага", null },
+                    { 6, "Професор", "Софія", "Грабовська", null }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Email", "IsAdmin", "PasswordHash" },
+                values: new object[,]
+                {
+                    { "admin@email.com", true, "Yh+CEuxWzPTw0y2M9zgFEw1stxAwoa1mvyaoI2157nY=" },
+                    { "vadimgromov1403@gmail.com", false, "X1ReXJ0j6yv7TfPCmfQ/pTeniB/AnjIif5c03K1QNEU=" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Requests",
+                columns: new[] { "Id", "CreationDate", "IsApproved", "UserRef" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(2021, 12, 13, 22, 1, 21, 757, DateTimeKind.Local).AddTicks(6979), true, "admin@email.com" },
+                    { 2, new DateTime(2021, 12, 13, 22, 1, 21, 759, DateTimeKind.Local).AddTicks(7926), true, "vadimgromov1403@gmail.com" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Students",
+                columns: new[] { "Id", "FirstName", "GroupRef", "LastName", "UserRef" },
+                values: new object[,]
+                {
+                    { 5, "Іван", 1, "Іванов", null },
+                    { 1, "Данило", 3, "Тимець", null },
+                    { 3, "Тарас", 3, "Бобеляк", null },
+                    { 4, "Віктор", 3, "Стрельников", null },
+                    { 2, "Вадим", 3, "Громов", "vadimgromov1403@gmail.com" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Subjects",
+                columns: new[] { "Id", "LectorRef", "Name" },
+                values: new object[,]
+                {
+                    { 1, 1, "Програмна інженерія" },
+                    { 2, 3, "Дискретна математика" },
+                    { 4, 3, "Теорія ймовірності та математична статистика" },
+                    { 3, 5, "Програмування" },
+                    { 5, 6, "Психологія примирення" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "GroupSubjects",
+                columns: new[] { "Id", "GroupRef", "SubjectRef" },
+                values: new object[,]
+                {
+                    { 1, 1, 1 },
+                    { 2, 2, 1 },
+                    { 3, 3, 2 },
+                    { 4, 3, 4 },
+                    { 5, 5, 5 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "JournalColumns",
+                columns: new[] { "Id", "Date", "GroupSubjectRef", "Note" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(2020, 3, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, null },
+                    { 2, new DateTime(2020, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, null },
+                    { 3, new DateTime(2020, 3, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, null },
+                    { 4, new DateTime(2020, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, null },
+                    { 5, new DateTime(2020, 4, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, null }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Grades",
+                columns: new[] { "Id", "JournalColumnRef", "Mark", "StudentRef" },
+                values: new object[,]
+                {
+                    { 4, 1, 14, 2 },
+                    { 3, 2, 18, 3 },
+                    { 2, 3, 15, 2 },
+                    { 1, 4, 20, 1 },
+                    { 5, 5, 20, 3 }
                 });
 
             migrationBuilder.CreateIndex(

@@ -10,8 +10,8 @@ using SST.Persistence;
 namespace SST.Persistence.Migrations
 {
     [DbContext(typeof(SSTDbContext))]
-    [Migration("20200422170322_Migration-Init")]
-    partial class MigrationInit
+    [Migration("20211213200122_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -44,6 +44,43 @@ namespace SST.Persistence.Migrations
                     b.HasIndex("StudentRef");
 
                     b.ToTable("Grades");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            JournalColumnRef = 4,
+                            Mark = 20,
+                            StudentRef = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            JournalColumnRef = 3,
+                            Mark = 15,
+                            StudentRef = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            JournalColumnRef = 2,
+                            Mark = 18,
+                            StudentRef = 3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            JournalColumnRef = 1,
+                            Mark = 14,
+                            StudentRef = 2
+                        },
+                        new
+                        {
+                            Id = 5,
+                            JournalColumnRef = 5,
+                            Mark = 20,
+                            StudentRef = 3
+                        });
                 });
 
             modelBuilder.Entity("SST.Domain.Entities.Group", b =>
@@ -70,6 +107,48 @@ namespace SST.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Groups");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Faculty = "Факультет прикладної математики та інформатики",
+                            IsMain = true,
+                            Name = "ПМІм-11",
+                            Year = 0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Faculty = "Факультет прикладної математики та інформатики",
+                            IsMain = true,
+                            Name = "ПМІм-12",
+                            Year = 0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Faculty = "Факультет прикладної математики та інформатики",
+                            IsMain = true,
+                            Name = "ПМІм-13",
+                            Year = 0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Faculty = "Факультет журналістики",
+                            IsMain = true,
+                            Name = "ЖРН-11с",
+                            Year = 0
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Faculty = "Філософський факультет",
+                            IsMain = true,
+                            Name = "ФФП-42с",
+                            Year = 0
+                        });
                 });
 
             modelBuilder.Entity("SST.Domain.Entities.GroupSubject", b =>
@@ -92,6 +171,38 @@ namespace SST.Persistence.Migrations
                     b.HasIndex("SubjectRef");
 
                     b.ToTable("GroupSubjects");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            GroupRef = 1,
+                            SubjectRef = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            GroupRef = 2,
+                            SubjectRef = 1
+                        },
+                        new
+                        {
+                            Id = 3,
+                            GroupRef = 3,
+                            SubjectRef = 2
+                        },
+                        new
+                        {
+                            Id = 4,
+                            GroupRef = 3,
+                            SubjectRef = 4
+                        },
+                        new
+                        {
+                            Id = 5,
+                            GroupRef = 5,
+                            SubjectRef = 5
+                        });
                 });
 
             modelBuilder.Entity("SST.Domain.Entities.JournalColumn", b =>
@@ -115,6 +226,38 @@ namespace SST.Persistence.Migrations
                     b.HasIndex("GroupSubjectRef");
 
                     b.ToTable("JournalColumns");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Date = new DateTime(2020, 3, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            GroupSubjectRef = 2
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Date = new DateTime(2020, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            GroupSubjectRef = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Date = new DateTime(2020, 3, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            GroupSubjectRef = 2
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Date = new DateTime(2020, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            GroupSubjectRef = 2
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Date = new DateTime(2020, 4, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            GroupSubjectRef = 2
+                        });
                 });
 
             modelBuilder.Entity("SST.Domain.Entities.Lector", b =>
@@ -146,6 +289,50 @@ namespace SST.Persistence.Migrations
                         .HasFilter("[UserRef] IS NOT NULL");
 
                     b.ToTable("Lectors");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AcademicStatus = "Доцент",
+                            FirstName = "Анатолій",
+                            LastName = "Музичук"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AcademicStatus = "Асистент",
+                            FirstName = "Андрій",
+                            LastName = "Глова"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AcademicStatus = "Професор",
+                            FirstName = "Юрій",
+                            LastName = "Щербина"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AcademicStatus = "Доцент",
+                            FirstName = "Віталій",
+                            LastName = "Горлач"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AcademicStatus = "Асистент",
+                            FirstName = "Любомир",
+                            LastName = "Галамага"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AcademicStatus = "Професор",
+                            FirstName = "Софія",
+                            LastName = "Грабовська"
+                        });
                 });
 
             modelBuilder.Entity("SST.Domain.Entities.Request", b =>
@@ -171,6 +358,22 @@ namespace SST.Persistence.Migrations
                         .IsUnique();
 
                     b.ToTable("Requests");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreationDate = new DateTime(2021, 12, 13, 22, 1, 21, 757, DateTimeKind.Local).AddTicks(6979),
+                            IsApproved = true,
+                            UserRef = "admin@email.com"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreationDate = new DateTime(2021, 12, 13, 22, 1, 21, 759, DateTimeKind.Local).AddTicks(7926),
+                            IsApproved = true,
+                            UserRef = "vadimgromov1403@gmail.com"
+                        });
                 });
 
             modelBuilder.Entity("SST.Domain.Entities.SecondaryGroup", b =>
@@ -225,6 +428,44 @@ namespace SST.Persistence.Migrations
                         .HasFilter("[UserRef] IS NOT NULL");
 
                     b.ToTable("Students");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            FirstName = "Данило",
+                            GroupRef = 3,
+                            LastName = "Тимець"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            FirstName = "Вадим",
+                            GroupRef = 3,
+                            LastName = "Громов",
+                            UserRef = "vadimgromov1403@gmail.com"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            FirstName = "Тарас",
+                            GroupRef = 3,
+                            LastName = "Бобеляк"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            FirstName = "Віктор",
+                            GroupRef = 3,
+                            LastName = "Стрельников"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            FirstName = "Іван",
+                            GroupRef = 1,
+                            LastName = "Іванов"
+                        });
                 });
 
             modelBuilder.Entity("SST.Domain.Entities.Subject", b =>
@@ -246,6 +487,38 @@ namespace SST.Persistence.Migrations
                     b.HasIndex("LectorRef");
 
                     b.ToTable("Subjects");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            LectorRef = 1,
+                            Name = "Програмна інженерія"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            LectorRef = 3,
+                            Name = "Дискретна математика"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            LectorRef = 5,
+                            Name = "Програмування"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            LectorRef = 3,
+                            Name = "Теорія ймовірності та математична статистика"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            LectorRef = 6,
+                            Name = "Психологія примирення"
+                        });
                 });
 
             modelBuilder.Entity("SST.Domain.Entities.User", b =>
@@ -263,6 +536,20 @@ namespace SST.Persistence.Migrations
                     b.HasKey("Email");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Email = "admin@email.com",
+                            IsAdmin = true,
+                            PasswordHash = "Yh+CEuxWzPTw0y2M9zgFEw1stxAwoa1mvyaoI2157nY="
+                        },
+                        new
+                        {
+                            Email = "vadimgromov1403@gmail.com",
+                            IsAdmin = false,
+                            PasswordHash = "X1ReXJ0j6yv7TfPCmfQ/pTeniB/AnjIif5c03K1QNEU="
+                        });
                 });
 
             modelBuilder.Entity("SST.Domain.Entities.Grade", b =>

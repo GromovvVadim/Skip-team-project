@@ -112,7 +112,7 @@ namespace SST.Persistence.Migrations
                             Id = 1,
                             Faculty = "Факультет прикладної математики та інформатики",
                             IsMain = true,
-                            Name = "ПМІ-31",
+                            Name = "ПМІм-11",
                             Year = 0
                         },
                         new
@@ -120,7 +120,7 @@ namespace SST.Persistence.Migrations
                             Id = 2,
                             Faculty = "Факультет прикладної математики та інформатики",
                             IsMain = true,
-                            Name = "ПМІ-32",
+                            Name = "ПМІм-12",
                             Year = 0
                         },
                         new
@@ -128,7 +128,7 @@ namespace SST.Persistence.Migrations
                             Id = 3,
                             Faculty = "Факультет прикладної математики та інформатики",
                             IsMain = true,
-                            Name = "ПМІ-33",
+                            Name = "ПМІм-13",
                             Year = 0
                         },
                         new
@@ -361,16 +361,16 @@ namespace SST.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreationDate = new DateTime(2020, 4, 24, 9, 12, 17, 572, DateTimeKind.Local).AddTicks(843),
+                            CreationDate = new DateTime(2021, 12, 13, 22, 1, 21, 757, DateTimeKind.Local).AddTicks(6979),
                             IsApproved = true,
                             UserRef = "admin@email.com"
                         },
                         new
                         {
                             Id = 2,
-                            CreationDate = new DateTime(2020, 4, 24, 9, 12, 17, 579, DateTimeKind.Local).AddTicks(5952),
+                            CreationDate = new DateTime(2021, 12, 13, 22, 1, 21, 759, DateTimeKind.Local).AddTicks(7926),
                             IsApproved = true,
-                            UserRef = "martashuyak@gmail.com"
+                            UserRef = "vadimgromov1403@gmail.com"
                         });
                 });
 
@@ -431,38 +431,38 @@ namespace SST.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            FirstName = "Володимир",
-                            GroupRef = 2,
-                            LastName = "Мільчановський"
+                            FirstName = "Данило",
+                            GroupRef = 3,
+                            LastName = "Тимець"
                         },
                         new
                         {
                             Id = 2,
-                            FirstName = "Марта",
-                            GroupRef = 2,
-                            LastName = "Шуяк",
-                            UserRef = "martashuyak@gmail.com"
+                            FirstName = "Вадим",
+                            GroupRef = 3,
+                            LastName = "Громов",
+                            UserRef = "vadimgromov1403@gmail.com"
                         },
                         new
                         {
                             Id = 3,
-                            FirstName = "Оксана",
-                            GroupRef = 2,
-                            LastName = "Пилипович"
+                            FirstName = "Тарас",
+                            GroupRef = 3,
+                            LastName = "Бобеляк"
                         },
                         new
                         {
                             Id = 4,
-                            FirstName = "Денис",
-                            GroupRef = 1,
-                            LastName = "Доскач"
+                            FirstName = "Віктор",
+                            GroupRef = 3,
+                            LastName = "Стрельников"
                         },
                         new
                         {
                             Id = 5,
-                            FirstName = "Роман",
-                            GroupRef = 3,
-                            LastName = "Левкович"
+                            FirstName = "Іван",
+                            GroupRef = 1,
+                            LastName = "Іванов"
                         });
                 });
 
@@ -544,7 +544,7 @@ namespace SST.Persistence.Migrations
                         },
                         new
                         {
-                            Email = "martashuyak@gmail.com",
+                            Email = "vadimgromov1403@gmail.com",
                             IsAdmin = false,
                             PasswordHash = "X1ReXJ0j6yv7TfPCmfQ/pTeniB/AnjIif5c03K1QNEU="
                         });

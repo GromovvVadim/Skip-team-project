@@ -32,7 +32,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\main_skipteam\main_skipteam\SST.WebUI.csproj" />
     <ProjectReference Include="..\SST.Application\SST.Application.csproj" />
     <ProjectReference Include="..\SST.Domain\SST.Domain.csproj" />
   </ItemGroup>

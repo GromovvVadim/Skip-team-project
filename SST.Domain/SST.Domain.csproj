@@ -20,8 +20,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\main_skipteam\main_skipteam\SST.WebUI.csproj" />
-  </ItemGroup>
-
 </Project>

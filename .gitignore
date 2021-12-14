@@ -490,4 +490,7 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
+# User-specific files
+*.json
+
 # End of https://www.gitignore.io/api/sonarqube,aspnetcore,visualstudio

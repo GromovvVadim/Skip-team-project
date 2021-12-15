@@ -68,7 +68,7 @@ namespace SST.WebUI
             services.AddControllersWithViews();
             services.AddTransient<RazorViewToStringRenderer>();
             services.AddSingleton<NotificationHub>();
-
+           
             IConfigurationRoot configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
@@ -76,7 +76,6 @@ namespace SST.WebUI
 
             var connectionString = configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<SSTDbContext>(options => options.UseSqlServer(connectionString));
-
             var builder = new ContainerBuilder();
             builder.Populate(services);
 
@@ -89,6 +88,7 @@ namespace SST.WebUI
             AutofacContainer = builder.Build();
 
             return new AutofacServiceProvider(AutofacContainer);
+            services.AddApplicationInsightsTelemetry();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,6 +1,6 @@
 ﻿@model SST.Application.Lectors.Queries.GetNotLinkedLectors.LectorListVm;
 
-@foreach (var lector in Model.Lectors)
+@foreach (var lector in Model.Lectors.Where(student => student.Email == string.Empty))
 {
     <option value="@lector.Id">@lector.FullName</option>
 }

@@ -7,4 +7,4 @@ Put grades, check courses
 Check grades and courses, see grades statistics
 ## Admin possibilities
 Add new lecturers and students, create and update courses, create accounts
-For more information check documentation.pdf
+## For more information check documentation.pdf

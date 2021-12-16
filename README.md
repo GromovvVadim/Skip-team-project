@@ -1,4 +1,4 @@
-# Student Mark Book app
+# Student Success Tracker (Mark Book) app
 Functional specification: 
 Our application provide you with a simple and comprehensible mark book, which will be comfortable to use both for lecturers and students. 
 ## Lecturer possibilities

@@ -10,4 +10,4 @@ Our application provide you with a simple and comprehensible mark book, which wi
 ![image](https://user-images.githubusercontent.com/46458014/146418494-a68e1d21-f11e-4aa1-a9ab-5a46bc28bb52.png)
 ## Admin possibilities
 ![image](https://user-images.githubusercontent.com/46458014/146418552-7531430d-9c55-4374-8316-ecc4e341b829.png)
-## For more information check [documentation.pdf](https://github.com/user/repo/blob/branch/other_file.md)
+## For more information check [SkipTeam.pptx](https://github.com/GromovvVadim/Skip-team-project/blob/main/SkipTeam.pptx) and [Documentation.pdf](https://github.com/GromovvVadim/Skip-team-project/blob/main/Documentation.pdf)

@@ -1,6 +1,7 @@
 # Student Success Tracker (Mark Book) app
 The goal of the project is to provide an easy and convenient way to track the success of the students. The system is valid for authorized users and provides them
 with an access to such actions: view the success of a particular student or group, view the subjects and lecturers lists, give marks for the subjects (provided by the Lecturer), and manage their own account.
+
 Functional specification: 
 Our application provide you with a simple and comprehensible mark book, which will be comfortable to use both for lecturers and students. 
 ## Lecturer possibilities

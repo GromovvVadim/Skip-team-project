@@ -11,3 +11,5 @@ Our application provide you with a simple and comprehensible mark book, which wi
 ## Admin possibilities
 ![image](https://user-images.githubusercontent.com/46458014/146418552-7531430d-9c55-4374-8316-ecc4e341b829.png)
 ## For more information check [SkipTeam.pptx](https://github.com/GromovvVadim/Skip-team-project/blob/main/SkipTeam.pptx) and [Documentation.pdf](https://github.com/GromovvVadim/Skip-team-project/blob/main/Documentation.pdf)
+## Clickable prototype
+https://vadym147036.invisionapp.com/overview/Project-cl1xrka0h200h019of3hx04ve/screens?sortBy=1&sortOrder=1&viewLayout=2

@@ -13,3 +13,4 @@ Our application provide you with a simple and comprehensible mark book, which wi
 ## For more information check [SkipTeam.pptx](https://github.com/GromovvVadim/Skip-team-project/blob/main/SkipTeam.pptx) and [Documentation.pdf](https://github.com/GromovvVadim/Skip-team-project/blob/main/Documentation.pdf)
 ## Clickable prototype
 https://vadym147036.invisionapp.com/overview/Project-cl1xrka0h200h019of3hx04ve/screens?sortBy=1&sortOrder=1&viewLayout=2
+https://pidoco.com/rabbit/invitation/AYnAXzm5lPAdcCGrujlho6GSRB9IdBZKld13IG2f

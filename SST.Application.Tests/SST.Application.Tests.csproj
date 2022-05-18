@@ -28,8 +28,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\SST.Application\SST.Application.csproj" />
-    <ProjectReference Include="..\..\src\SST.Persistence\SST.Persistence.csproj" />
+    <ProjectReference Include="..\SST.Application\SST.Application.csproj" />
+    <ProjectReference Include="..\SST.Persistence\SST.Persistence.csproj" />
   </ItemGroup>
+
+  
 
 </Project>

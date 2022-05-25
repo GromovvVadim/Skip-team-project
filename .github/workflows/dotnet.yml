@@ -20,5 +20,5 @@ jobs:
         run: dotnet build SST.WebUI
       - name: Test SST.Application.Tests
         run: dotnet test SST.Application.Tests --no-restore
-      - name: Test SST.WebUI.Tests
-        run: dotnet test SST.WebUI.Tests --no-restore
+      - name: Test SST.WebUI.tests
+        run: dotnet test SST.WebUI.tests --no-restore
